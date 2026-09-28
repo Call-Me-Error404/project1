@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruh Freelancing | Premium Web, SaaS & Data Analytics Studio</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Bruh Freelancing is a dynamic freelance engineering and design team led by Ayyappa & Chandhana. We build high-performance Web Apps, SaaS Platforms, Landing Pages, and Data Analytics solutions for local and global businesses.">
+  <meta name="keywords"
+    content="Bruh Freelancing, Web Design, Web Development, SaaS Projects, Landing Pages, Data Analysis, Ayyappa, Chandhana, Local Clients">
+  <meta name="author" content="Bruh Freelancing - Ayyappa & Chandhana">
+  <meta name="robots" content="index, follow">
+
+  <!-- Security Headers (Client-Level Compatibility) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:;">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo-circle.png">
+
+  <!-- Google Fonts: Outfit (Display & Body) & JetBrains Mono (Tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons via HTTPS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Ambient Light Orbs and Grid (Hardware-Accelerated Background) -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+    <div class="cyber-grid-overlay"></div>
+  </div>
+
+  <!-- Smooth Constellation Particles Canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION BAR
+       ========================================================================== -->
+  <header>
+    <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-brand" aria-label="Bruh Freelancing Home">
+          <div class="brand-logo-wrap">
+            <img src="assets/logo-circle.png" alt="Bruh Freelancing Logo" class="nav-logo-img">
+          </div>
+          <span class="brand-text">Bruh Freelancing</span>
+        </a>
+
+        <!-- Desktop & Mobile Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="#contact" class="nav-cta-btn">
+            <i class="fas fa-paper-plane"></i>
+            <span>Hire Us</span>
+          </a>
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION: 3D HEADLINE & DYNAMIC LOGO STAGE
+       ========================================================================== -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Hero Text & Dynamic CTAs -->
+          <div class="hero-content reveal-on-scroll">
+            <div class="badge-pill">
+              <span class="badge-dot"></span>
+              <span>Accepting New Local & Remote Projects</span>
+            </div>
+
+            <h1 class="hero-title">
+              We Craft <span class="text-gradient">High-Impact Digital Products</span> That Scale.
+            </h1>
+
+            <p class="hero-subtitle">
+              Meet <strong>Bruh Freelancing</strong> — a partner-driven engineering and design duo. We transform local
+              business ideas into high-converting <strong>Web Platforms, SaaS Systems, and actionable Data
+                Dashboards</strong> with unmatched speed and craftsmanship.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                <span>Get a Free Quote</span>
+              </a>
+              <a href="#services" class="btn btn-secondary">
+                <i class="fas fa-layer-group"></i>
+                <span>Explore Services</span>
+              </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-num">100<span>%</span></div>
+                <div class="stat-label">Hands-On Execution</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">15<span>+</span></div>
+                <div class="stat-label">Local Client Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">3.5<span>x</span></div>
+                <div class="stat-label">Average Client ROI</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero 3D Stage with Dynamic Circular Logo -->
+          <div class="hero-visual reveal-on-scroll delay-200">
+            <div class="hero-3d-stage">
+              <div class="hero-orb-backdrop"></div>
+              <div class="orbit-ring orbit-ring-1"></div>
+              <div class="orbit-ring orbit-ring-2"></div>
+
+              <!-- Clean Circular Dynamic Logo -->
+              <div class="hero-logo-card dynamic-logo-hover" data-tilt data-tilt-max="15"
+                title="Bruh Freelancing - Fist Bump Partnership">
+                <img src="assets/logo-circle.png" alt="Bruh Freelancing Circular Badge Logo" class="hero-logo-img">
+              </div>
+
+              <!-- 3D Interactive Floating Badges -->
+              <div class="floating-pill pill-1">
+                <i class="fas fa-code"></i>
+                <span>Modern Web & SaaS</span>
+              </div>
+              <div class="floating-pill pill-2">
+                <i class="fas fa-paint-brush"></i>
+                <span>Next-Gen UI/UX</span>
+              </div>
+              <div class="floating-pill pill-3">
+                <i class="fas fa-chart-line"></i>
+                <span>Deep Data Analysis</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT US SECTION: LOCAL CLIENT COLLABORATION & TEAM PROFILE
+         ========================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">// Who We Are</span>
+          <h2 class="section-title">Built On Direct Collaboration, <br><span class="text-gradient">Not Agency Red
+              Tape</span></h2>
+          <p class="section-desc">
+            We are a hands-on freelancing team. When you hire Bruh Freelancing, you communicate directly with the
+            builders — Ayyappa and Chandhana. We understand regional market dynamics, customer behavior, and how to turn
+            local businesses into digital market leaders.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Philosophy & Experience with Local Clients -->
+          <div class="about-text-col reveal-on-scroll">
+            <h3>Bridging Local Businesses With Modern Digital Power</h3>
+            <p class="about-p">
+              From retail stores and wholesale distributors to regional clinics, restaurants, and startups, we
+              specialize in delivering tangible results. We don't just write code; we visit local establishments,
+              analyze ground-level operational bottlenecks, and architect solutions that eliminate paper waste, automate
+              orders, and drive revenue.
+            </p>
+            <p class="about-p">
+              Every project is managed end-to-end: wireframes in Figma, high-velocity frontend engineering, rock-solid
+              backend APIs, and predictive business analytics to monitor your ongoing growth.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <i class="fas fa-handshake box-icon"></i>
+                <h4>Hands-On Execution</h4>
+                <p>No account managers or outsourcing. You work directly with technical co-founders from day one.</p>
+              </div>
+
+              <div class="highlight-box">
+                <i class="fas fa-map-marker-alt box-icon"></i>
+                <h4>Local Market Savvy</h4>
+                <p>Deep familiarity with local payment modes (UPI, Razorpay), regional customer UX, and WhatsApp
+                  commerce.</p>
+              </div>
+
+              <div class="highlight-box">
+                <i class="fas fa-shield-alt box-icon"></i>
+                <h4>Enterprise Security</h4>
+                <p>Clean code sanitization, zero tracking bloat, HTTPS encryption, and resilient architecture standard
+                  on every deliverable.</p>
+              </div>
+
+              <div class="highlight-box">
+                <i class="fas fa-bolt box-icon"></i>
+                <h4>Rapid Turnaround</h4>
+                <p>Agile 2-3 week sprint cycles so your business can start onboarding customers and generating revenue
+                  immediately.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Founders Showcase Cards (Ayyappa & Chandhana) -->
+          <div class="founders-wrapper reveal-on-scroll delay-200">
+
+            <!-- Partner 1: Ayyappa -->
+            <div class="founder-card partner-ayyappa" data-tilt data-tilt-max="10">
+              <div class="founder-avatar-wrap">
+                <div class="founder-avatar-img">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+              </div>
+              <div class="founder-info">
+                <h4>Ayyappa <span class="tag-badge" style="color: var(--accent-cyan);">Co-Founder</span></h4>
+                <span class="founder-role">Lead Full-Stack Architect & SaaS Specialist</span>
+                <p class="founder-desc">
+                  Oversees cloud infrastructure, modern React/Next.js architectures, secure database systems, and
+                  lightning-fast web engineering. Focused on bulletproof reliability and scalable SaaS workflows.
+                </p>
+                <div class="founder-tags">
+                  <span class="tag-badge">Next.js</span>
+                  <span class="tag-badge">Node.js</span>
+                  <span class="tag-badge">PostgreSQL</span>
+                  <span class="tag-badge">Cloud APIs</span>
+                  <span class="tag-badge">System Security</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Partner 2: Chandhana -->
+            <div class="founder-card partner-chandhana" data-tilt data-tilt-max="10">
+              <div class="founder-avatar-wrap">
+                <div class="founder-avatar-img" style="color: #ff75c3;">
+                  <i class="fas fa-wand-magic-sparkles"></i>
+                </div>
+              </div>
+              <div class="founder-info">
+                <h4>Chandhana <span class="tag-badge" style="color: #ff75c3;">Co-Founder</span></h4>
+                <span class="founder-role">Lead UI/UX Designer & Data Analytics Specialist</span>
+                <p class="founder-desc">
+                  Crafts intuitive, visually arresting user interfaces and transforms messy business logs into
+                  actionable predictive analytics dashboards and high-conversion landing page layouts.
+                </p>
+                <div class="founder-tags">
+                  <span class="tag-badge">Figma UI/UX</span>
+                  <span class="tag-badge">Python / Pandas</span>
+                  <span class="tag-badge">PowerBI</span>
+                  <span class="tag-badge">Conversion Design</span>
+                  <span class="tag-badge">Behavior Analytics</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES SECTION: MODERN 3D TILT CARDS
+         ========================================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">// What We Build</span>
+          <h2 class="section-title">Specialized Services Built <br><span class="text-gradient">For High
+              Performance</span></h2>
+          <p class="section-desc">
+            We focus on three interconnected domains that drive tangible revenue: captivating web experiences, scalable
+            SaaS systems, and data-driven business intelligence.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Service 1: Web Design & Web Development -->
+          <div class="service-card card-web" data-tilt data-tilt-max="10">
+            <div class="service-icon-box">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Web Design & Web Development</h3>
+            <p>
+              Bespoke, high-performance websites built from scratch. We combine modern aesthetics, snappy
+              micro-interactions, responsive 3D effects, and SEO-optimized structures.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Custom Figma Design & Wireframing</li>
+              <li><i class="fas fa-check-circle"></i> Next.js, React & Clean Vanilla Web Stack</li>
+              <li><i class="fas fa-check-circle"></i> 100/100 Core Web Vitals & PageSpeed</li>
+              <li><i class="fas fa-check-circle"></i> Mobile-First Fluid Responsive Architecture</li>
+              <li><i class="fas fa-check-circle"></i> CMS Integration & Client Control Panels</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-tag">HTML5 / React / Next.js</span>
+              <a href="#contact" class="service-link">Start Web Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Service 2: Landing Pages & SaaS Projects -->
+          <div class="service-card card-saas" data-tilt data-tilt-max="10">
+            <div class="service-icon-box">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Landing Pages & SaaS Projects</h3>
+            <p>
+              Ultra-converting landing pages for marketing campaigns and end-to-end multi-tenant SaaS applications
+              equipped with user auth, billing, and real-time workflows.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Conversion Rate Optimized (CRO) Funnels</li>
+              <li><i class="fas fa-check-circle"></i> Multi-Tenant SaaS Architecture & Databases</li>
+              <li><i class="fas fa-check-circle"></i> Payment Gateways (Stripe, Razorpay, UPI)</li>
+              <li><i class="fas fa-check-circle"></i> Real-time WebSockets & Push Notifications</li>
+              <li><i class="fas fa-check-circle"></i> Role-Based Access Control & User Portals</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-tag">SaaS / Cloud / Payments</span>
+              <a href="#contact" class="service-link">Build Your SaaS <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Service 3: Data Analysis -->
+          <div class="service-card card-data" data-tilt data-tilt-max="10">
+            <div class="service-icon-box">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3>Data Analysis & Dashboards</h3>
+            <p>
+              Unlock the hidden value in your operational data. We clean, model, and visualize your sales, inventory,
+              and customer churn metrics into real-time decision dashboards.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Python (Pandas/NumPy) ETL Data Pipelines</li>
+              <li><i class="fas fa-check-circle"></i> Interactive PowerBI & Web BI Dashboards</li>
+              <li><i class="fas fa-check-circle"></i> Sales Funnel & Customer Retention Metrics</li>
+              <li><i class="fas fa-check-circle"></i> Inventory Optimization & Predictive Trends</li>
+              <li><i class="fas fa-check-circle"></i> Automated Weekly KPI Email Reports</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-tag">Python / PowerBI / SQL</span>
+              <a href="#contact" class="service-link">Analyze Your Data <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION: SANITIZED INPUT FORMS & HIGH-SECURITY ARCHITECTURE
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">// Get In Touch</span>
+          <h2 class="section-title">Ready To Accelerate <br><span class="text-gradient">Your Digital Presence?</span>
+          </h2>
+          <p class="section-desc">
+            Directly connect with Ayyappa & Chandhana. We reply with a detailed project breakdown, feasibility review,
+            and transparent timeline within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Channels & Security Badges -->
+          <div class="contact-info-card reveal-on-scroll">
+            <h3>Direct Partner Access</h3>
+            <p>
+              Whether you need a brand-new website, an end-to-end SaaS application, or clarity from your business data,
+              our team is ready to deliver hands-on excellence.
+            </p>
+
+            <div class="contact-channels">
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-item-content">
+                  <h5>Direct Email</h5>
+                  <a href="mailto:bruhfreelancing@gmail.com">bruhfreelancing@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-item-content">
+                  <h5>WhatsApp Quick Chat</h5>
+                  <a href="https://wa.me/919999999999?text=Hi%20Bruh%20Freelancing,%20I%20have%20a%20project%20inquiry"
+                    target="_blank" rel="noopener noreferrer">+91 (Local Client Hotline)</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-item-content">
+                  <h5>Operating Base</h5>
+                  <span>Andhra Pradesh & Telangana / Remote Worldwide</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security Assurance Card -->
+            <div class="security-badge-card">
+              <i class="fas fa-shield-virus"></i>
+              <div>
+                <h5>Zero-Vulnerability Static Architecture</h5>
+                <p>
+                  Every submission is client-sanitized against XSS and injection attacks, protected by an anti-bot
+                  honeypot, and communicated over encrypted HTTPS.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sanitized Contact Form -->
+          <div class="secure-form-card reveal-on-scroll delay-200">
+            <form id="contactForm" novalidate autocomplete="off">
+
+              <!-- Anti-bot honeypot field -->
+              <input type="text" name="_hp_shield_check" id="hp_shield_check" class="hp-shield-field" tabindex="-1"
+                autocomplete="off">
+              <input type="hidden" name="_security_nonce" id="form_security_nonce" value="">
+
+              <div id="formStatusAlert" class="form-status-alert"></div>
+
+              <div class="form-group">
+                <label for="contactName">Your Name / Organization *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user input-icon"></i>
+                  <input type="text" id="contactName" name="name" class="form-input"
+                    placeholder="e.g. Rahul Sharma / Local Retail Enterprise" required maxlength="60">
+                </div>
+                <span class="input-feedback"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Work Email Address *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="name@company.com"
+                    required maxlength="120">
+                </div>
+                <span class="input-feedback"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactService">Required Service *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-briefcase input-icon"></i>
+                  <select id="contactService" name="service" class="form-input"
+                    style="padding-left: 2.85rem; appearance: none; -webkit-appearance: none;">
+                    <option value="Web Design & Web Development">Web Design & Web Development</option>
+                    <option value="Landing Pages & SaaS Projects">Landing Pages & SaaS Projects</option>
+                    <option value="Data Analysis & BI Dashboards">Data Analysis & BI Dashboards</option>
+                    <option value="Complete Digital Transformation (All-in-One)">Complete Digital Transformation
+                      (All-in-One)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Project Details & Objectives *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-comment-alt input-icon" style="top: 1.1rem;"></i>
+                  <textarea id="contactMessage" name="message" class="form-input"
+                    placeholder="Briefly describe your business goals, current bottlenecks, and target timeline..."
+                    required minlength="15" maxlength="1500"></textarea>
+                </div>
+                <span class="input-feedback"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Sanitized Project Inquiry</span>
+              </button>
+
+              <div
+                style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1rem; font-size: 0.78rem; color: var(--text-muted);">
+                <i class="fas fa-lock" style="color: var(--accent-cyan);"></i>
+                <span>SSL Encrypted • Strict CORS & CSP Protected • Zero Spam Guarantee</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER: PARTNERS AYYAPPA & CHANDHANA
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand & Description -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/logo-circle.png" alt="Bruh Freelancing Logo" class="footer-logo-img">
+            <span class="footer-brand-title">Bruh Freelancing</span>
+          </div>
+          <p class="footer-brand-desc">
+            A specialized freelancing team delivering bespoke Web Development, SaaS Platforms, Landing Pages, and Data
+            Analytics for local businesses and growing startups.
+          </p>
+
+          <!-- Highlight Partners Section in Footer -->
+          <div class="footer-partners-box">
+            <div class="footer-partners-title">// Foundational Partners</div>
+            <div class="footer-partner-names">
+              <div class="partner-entry">
+                <strong>Ayyappa</strong>
+                <span>Co-Founder & Full-Stack Architect</span>
+              </div>
+              <div class="partner-entry">
+                <strong>Chandhana</strong>
+                <span>Co-Founder & UI/UX Data Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Our Team</a></li>
+            <li><a href="#services">Our Core Services</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>What We Do</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Web Design & Figma UI</a></li>
+            <li><a href="#services">Full-Stack Web Dev</a></li>
+            <li><a href="#services">High-Converting Landing Pages</a></li>
+            <li><a href="#services">SaaS Product Engineering</a></li>
+            <li><a href="#services">Business Data Analytics</a></li>
+            <li><a href="#services">Local Client Growth Strategy</a></li>
+          </ul>
+        </div>
+
+        <!-- Security & Standards -->
+        <div class="footer-col">
+          <h4>Standards & Ethos</h4>
+          <ul class="footer-links">
+            <li><a href="#contact"><i class="fas fa-shield-alt"
+                  style="color: var(--accent-cyan); margin-right: 4px;"></i> Secure Static Architecture</a></li>
+            <li><a href="#contact"><i class="fas fa-lock" style="color: var(--accent-cyan); margin-right: 4px;"></i>
+                Sanitized Form Endpoints</a></li>
+            <li><a href="#contact"><i class="fas fa-check" style="color: var(--accent-cyan); margin-right: 4px;"></i>
+                HTTPS & CORS Configured</a></li>
+            <li><a href="#contact"><i class="fas fa-bolt" style="color: var(--accent-cyan); margin-right: 4px;"></i>
+                100/100 Core Web Vitals</a></li>
+            <li><a href="#about"><i class="fas fa-users" style="color: var(--accent-cyan); margin-right: 4px;"></i>
+                Ayyappa & Chandhana</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> <strong>Bruh Freelancing</strong>. Founded by Ayyappa & Chandhana.
+          All rights reserved.
+        </p>
+
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Modules (High Performance & Butter-Smooth) -->
+  <script src="js/particles.js"></script>
+  <script src="js/3d-tilt.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/form-security.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
